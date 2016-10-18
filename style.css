@@ -58,4 +58,16 @@ li a:hover:not(.active) {
   .logo{
     float: none;
   }
+  .smaller{
+    width: 200px;
+    height: 58px;
+  }
+
+  li a{
+    padding: 8px 10px;
+  }
+  ul{
+    padding: 2px;
+    padding-bottom: 0px;
+  }
 }
