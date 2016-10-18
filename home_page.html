@@ -3,13 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		 <link rel="stylesheet" href="style.css" type="text/css">
+		 <script src = "snapshot.js"></script>
 		<title>Home_Page</title>
 	</head>
 	<body>
 		<div class="main"></div>
-		<div id="idsidenav" class="sidenav">
-			<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
-		</div>
+		<div id="idsidenav" class="sidenav"></div>
 		<div class="nav">
 			<a class="logo" href="#"><img class="smaller" src="https://images.cooltext.com/4798334.png" width="265px" height="68px" alt="Camagru" /></a>
 			<ul>
@@ -18,5 +17,8 @@
 				<li><a href="#">Logout</a></li>
 			</ul>
 		</div>
+			<video id = "stream" class = "screen" autoplay></video>
+			<canvas id = "canvas" class = "screen"></canvas>
+			<button id="capture">Take picture</button>
 	</body>
 </html>

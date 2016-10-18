@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Video testing</title>
+	</head>
+	<body>
+		<video id="player" autoplay></video>
+		<button id="capture">Capture</button>
+		<canvas id="snapshot" width=320 height=240></canvas>
+		<script>
+		  var player = document.getElementById('player');
+		  var snapshotCanvas = document.getElementById('snapshot');
+		  var captureButton = document.getElementById('capture');
+		  var videoTracks;
+
+		  var handleSuccess = function(stream) {
+		    // Attach the video stream to the video element and autoplay.
+		    player.src = URL.createObjectURL(stream);
+		    videoTracks = stream.getVideoTracks();
+		  };
+
+		  captureButton.addEventListener('click', function() {
+		    var context = snapshot.getContext('2d');
+		    context.drawImage(player, 0, 0, snapshotCanvas.width, snapshotCanvas.height);
+
+		    // Stop all video streams.
+		//    videoTracks.forEach(function(track) { track.stop() });
+		  });
+
+		  navigator.mediaDevices.getUserMedia({ audio: false, video: true })
+		      .then(handleSuccess);
+		</script>
+	</body>
+</html>
