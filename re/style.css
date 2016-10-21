@@ -1,79 +1,240 @@
-body{
-  background-color: #666666;
-  padding: 0;
-  margin: 0;
+body {
+  position: fixed;
+  margin:0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #a6a6a6;
 }
 
-.nav{
+button{
+  cursor: pointer;
+  color: white;
+  background-color: #777;
+}
+
+form{
+  width: 100%;
+  height: 10%;
+}
+
+.log-in{
+  width: 80%;
+  max-width: 450px;
+  padding: 6%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.stream-container{
   position: relative;
   width: 100%;
-  background-color: #282828;
-  overflow: hidden;
+  height: 40%;
+  float: left;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.temp{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  max-height: 120px;
+  margin: 0.5%;
+}
+
+.stream{
+  position: relative;
+  height: 90%;
+}
+
+.image-container{
+  position: relative;
+  width: 100%;
+  height: 28%;
+  background-color: #008CBA;;
+  overflow: scroll;
+  text-align: center;
+  padding: 1%;
+}
+
+.gallary-images{
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: #008CBA;;
+  overflow: scroll;
+  text-align: center;
+  padding: 1%;
+}
+
+.like-button{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 10%;
+}
+
+.comment-button{
+  position: absolute;
+  top: 0;
+  right: 3%;
+  width: 10%;
+}
+
+.data{
+  position: relative;
+  padding: 1%;
+}
+
+.img, .img-gal{
+  position: relative;
+  width: auto;
+  max-height: 180px;
+  display: inline-block;
+  margin: 3%;
+}
+
+.template-container{
+  position: relative;
+  width: 100%;
+  height: 20%;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.inner-container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ul.nav, ul.nav2 {
+  position: relative;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 5%;
 }
 
-.logo{
+.footer li{
   float: right;
-  padding: 5px;
 }
 
-.navLinks{
-  float: left;
-}
-
-.navLinks ul{
-  list-style-type: none;
-  float: left;
-  position: relative;
-  padding: 5px;
-}
-
-.navLinks li{
-  float: left;
-}
-
-.navLinks li a{
-  display: block;
-  color: white;
+.footer li a{
+  display: inline-block;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+.footer li a:hover {
+  background-color: #555;
 }
 
-.linkcustom{
-  list-style-type: none;
-  padding: 0px;
+ul.nav li, ul.nav2 li {
+  float: left;
+}
+
+ul.nav li a, ul.nav2 li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.nav li a:hover, ul.nav2 li a:hover {
+  background-color: #555;
+}
+
+ul.nav li.icon {
+  display: none;
+}
+
+.logo{
+  width: 70%;
+  height: auto;
+}
+
+.logo-div{
   position: relative;
 }
 
-.active{
-  background-color: green;
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  height: 5%;
 }
 
-.smaller{
-  width: 200px;
-  height: 58px;
+@media screen and (max-width:680px) {
+  ul.nav li:not(:first-child) {display: none;}
+  ul.nav li.icon {
+    float: right;
+    display: inline-block;
+  }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 420px){
   .logo{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:680px) {
+
+  ul.nav.responsive {
+    position: relative;
+    height: auto;
+  }
+  ul.nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.nav.responsive li {
     float: none;
+    display: inline;
   }
-
-  li a{
-    padding: 8px 10px;
-  }
-
-  ul{
-    padding: 2px;
-    padding-bottom: 0px;
-  }
-  .sidenav{
-    width: 0px;
+  ul.nav.responsive li a {
+    display: block;
+    text-align: left;0
   }
 }
