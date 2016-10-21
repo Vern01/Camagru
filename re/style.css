@@ -18,7 +18,7 @@ form{
   height: 10%;
 }
 
-.log-in{
+.submit-form{
   width: 80%;
   max-width: 450px;
   padding: 6%;
@@ -28,7 +28,7 @@ form{
   transform: translate(-50%, -140%);
 }
 
-.login-button {
+.submit-button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -38,7 +38,7 @@ form{
     width: 100%;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -132,16 +132,57 @@ input[type=text], input[type=password] {
   transform: translateY(-50%);
 }
 
-ul.nav, ul.nav2 {
-  position: relative;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  height: 5%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #777;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+    z-index: 10;
+}
 .footer li{
   float: right;
 }
@@ -160,25 +201,7 @@ ul.nav, ul.nav2 {
   background-color: #555;
 }
 
-ul.nav li, ul.nav2 li {
-  float: left;
-}
-
-ul.nav li a, ul.nav2 li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-ul.nav li a:hover, ul.nav2 li a:hover {
-  background-color: #555;
-}
-
-ul.nav li.icon {
+.icon{
   display: none;
 }
 
