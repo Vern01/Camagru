@@ -7,18 +7,21 @@
 		<title>Home_Page</title>
 	</head>
 	<body>
-		<div class="main"></div>
-		<div id="idsidenav" class="sidenav"></div>
-		<div class="nav">
-			<a class="logo" href="#"><img class="smaller" src="https://images.cooltext.com/4798334.png" width="265px" height="68px" alt="Camagru" /></a>
-			<ul>
-				<li><a class = "active" href="#">Home</a></li>
-				<li><a href="#">Gallary</a></li>
-				<li><a href="#">Logout</a></li>
-			</ul>
+		<div id="main">
+			<div id="idsidenav" class="sidenav"></div>
+			<div class="nav">
+				<a class="logo" href="#"><img class="smaller" src="https://images.cooltext.com/4798334.png" width="265px" height="68px" alt="Camagru" /></a>
+				<ul class="navLink">
+					<li><a class = "active" href="#">Home</a></li>
+					<li><a href="#">Gallary</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+			<div class="editing">
+				<video id = "stream" class = "screen" controls autoplay></video>
+				<!--canvas id = "canvas" class = "screen"></canvas>
+				<button id="capture">Take picture</button-->
+			</div>
 		</div>
-			<video id = "stream" class = "screen" autoplay></video>
-			<canvas id = "canvas" class = "screen"></canvas>
-			<button id="capture">Take picture</button>
 	</body>
 </html>

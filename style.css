@@ -1,32 +1,39 @@
 body{
   margin: 0;
   padding: 0;
+  width: 100%;
+  background: #353535;
+}
+
+#main{
+  margin: px;
 }
 
 .nav {
   width: 100%;
-  top: 0;
-  position: fixed;
+  float: left;
+  position: absolute;
   background-color: #282828;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
-.stream_div{
-  margin-top: 50%;
-  margin-left: 35%
+.editing{
+  position: absolute;
+  float: left;
 }
 
 .screen{
-  width: 30%;
-  width: 30%;
+  width: 300px;
+  height: 300px;
+  margin-top: auto;
 }
 
 .sidenav{
   height: 100%;
   width: 200px;
-  position: fixed;
+  position: absolute;;
   z-index: 1;
   top: 0;
   right: 0;
@@ -93,7 +100,8 @@ li a:hover:not(.active) {
 
 .logo {
   float: right;
-  position: relative;
+  position: absolute;
+  width: 30%;
 }
 
 .active {
@@ -117,8 +125,7 @@ li a:hover:not(.active) {
     padding: 2px;
     padding-bottom: 0px;
   }
-
   .sidenav{
-    width: 0;
+    width: 0px;
   }
 }
