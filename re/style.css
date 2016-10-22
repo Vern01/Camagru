@@ -69,6 +69,10 @@ input[type=text], input[type=password], input[type=email] {
   height: 90%;
 }
 
+#snapshot{
+  display: none;
+}
+
 .image-container{
   position: relative;
   width: 100%;

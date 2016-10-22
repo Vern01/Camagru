@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css"/>
     <script src="layout.js" charset="utf-8"></script>
+    <script src="snapshot.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -25,32 +26,23 @@
   </li>
 </ul>
 <div class="stream-container">
-    <video class="stream" autoplay poster="http://cdn.lookanimals.com/pictures/3.bp.blogspot.com/-dQUTeQl-E18/UWjevu1YErI/AAAAAAAAAT0/mOs-qFQYYLA/s1600/golden_retriever_puppy.jpg"></video>
+    <video class="stream"  id="player" autoplay></video>
+    <canvas id="snapshot" class="stream"></canvas>
     <div class="capture-button">
-        <button class="center-div" type="button">Take a picture</button>
+        <button class="center-div" onClick="addFoto()" type="button" id="capture">Take a picture</button>
     </div>
+    <script src="snapshot.js" charset="utf-8"></script>
 </div>
 <div class="template-container">
     <div class="inner-container">
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
-        <img class="temp" src="http://cdn3-www.dogtime.com/assets/uploads/gallery/golden-retriever-puppies_3/gp-7.jpg" alt="dogs" width="30%"/>
+        <img class="temp" src="http://www.pngall.com/wp-content/uploads/2016/03/Thug-Life-Glasses-PNG.png" alt="dogs" width="30%"/>
+        <img class="temp" src="http://www.pngall.com/wp-content/uploads/2016/03/Thug-Life.png" alt="dogs" width="30%"/>
+        <img class="temp" src="http://s3.amazonaws.com/ragefaces/966412cc1838c13ee0349b4a05a17802.png" alt="dogs" width="30%"/>
+        <img class="temp" src="http://www.hercampus.com/sites/default/files/styles/full_width_embed/public/2015/11/04/tumblr_inline_nwp2o0j08p1s9clfh_500.png?itok=kT7J_NFu" alt="dogs" width="30%"/>
+
     </div>
 </div>
-<div class="image-container">
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
-        <img class="img" src="https://i.ytimg.com/vi/2qcYxx_Okj4/maxresdefault.jpg" alt="dogs_2"/>
+<div class="image-container" id="images">
 </div>
 <div class="footer">
     <li><a class="footer-nav" href="#contact">Contact us</a></li>
