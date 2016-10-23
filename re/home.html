@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
     <link rel="stylesheet" href="style.css"/>
     <script src="layout.js" charset="utf-8"></script>
     <script src="snapshot.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<form method="post" accept-charset="utf-8" name="form1" class="hide">
+	<input name="hidden_data" id='hidden_data' type="hidden"/>
+</form>
 <ul class="nav" id="mynav">
     <div class="logo-div"><li><img class="logo" src="https://images.cooltext.com/4798334.png" width="265px" height="68px" alt="Camagru" /></li></div>
     <li><a class="active" href="home.html">Home</a></li>
@@ -20,7 +23,7 @@
         <a href="delete_account.html">Delete Account</a>
       </div>
     </li>
-    <li><a href="login.html">Log out</a></li>
+    <li><a href="login.php">Log out</a></li>
     <li class="icon">
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
   </li>
@@ -29,7 +32,7 @@
     <video class="stream"  id="player" autoplay></video>
     <canvas id="snapshot" class="stream"></canvas>
     <div class="capture-button">
-        <button class="center-div" onClick="addFoto()" type="button" id="capture">Take a picture</button>
+        <button class="center-div" onClick="addFoto()" value="Upload" type="button" id="capture">Take a picture</button>
     </div>
     <script src="snapshot.js" charset="utf-8"></script>
 </div>

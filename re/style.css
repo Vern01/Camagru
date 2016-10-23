@@ -64,6 +64,10 @@ input[type=text], input[type=password], input[type=email] {
   margin: 0.5%;
 }
 
+.hide{
+  display: none;
+}
+
 .stream{
   position: relative;
   height: 90%;
