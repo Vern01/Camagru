@@ -12,7 +12,7 @@ function check_id()
     if ($count == "0")
     {
     //    echo "faaaktup";
-        header ('Location: http://localhost:8080/Camagru_final/index.html');
+        header ('Location: http://localhost:8080/Camagru/index.html');
     }
     else
     {

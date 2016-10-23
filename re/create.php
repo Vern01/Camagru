@@ -17,7 +17,7 @@ function check_file()
 		$conn->login_user($id);
 	}
 	else
-    //    header ('Location: http://localhost:8080/Camagru_final/re/sign_up.html');
+    //    header ('Location: http://localhost:8080/Camagru/re/sign_up.html');
 		echo "This Login is not avaialble son : ";
 }
 
@@ -29,8 +29,8 @@ if($_POST["submit"] == "create")
 		check_file();
 	}
 	else
-		header ('Location: http://localhost:8080/Camagru_final/re/sign_up.html');
+		header ('Location: http://localhost:8080/Camagru/re/sign_up.html');
 }
 else
-	header ('Location: http://localhost:8080/Camagru_final/re/sign_up.html');
+	header ('Location: http://localhost:8080/Camagru/re/sign_up.html');
 ?>

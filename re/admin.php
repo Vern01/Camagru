@@ -4,7 +4,7 @@ class camagru{
         // open database connection
         $servername = "localhost";
     	$username = "root";
-    	$password = "No1chicken";
+    	$password = "12345678";
     	$port = 8080;
     	$db="camagru";
     	$charset="UTF8MB4";
@@ -120,7 +120,7 @@ public function login_user($id)
         echo $_SESSION['user'];
         //echo $_SESSION['conn'];
         echo " is loggin in ";
-    	header("Location: http://localhost:8080/Camagru_final/re/home.html");
+    	header("Location: http://localhost:8080/Camagru/re/home.html");
     }
 
 public function get_id($password)
